@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Monofonto;
+  src: url(fonts/MONOFONT.TTF);
+}
+
 .menu-boton input[type="checkbox"]{
 	display: none;
 	
@@ -52,6 +57,7 @@ label{
 
 
 .menu{
+	font-family: monospace;
 	visibility: hidden;
 	position: absolute;
 	width: 100%;
