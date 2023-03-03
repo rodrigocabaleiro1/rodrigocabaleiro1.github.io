@@ -1,0 +1,105 @@
+.menu-boton input[type="checkbox"]{
+	display: none;
+	
+}
+
+
+
+label{
+	cursor: pointer;
+	display: flex;
+	position: fixed;
+	top: 30px;
+	right: 75px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.menu-boton input[type="checkbox"]: hover {
+	
+}
+
+.menu-boton{
+	
+}
+
+.icon-menu{
+	z-index: 4;
+	display: flex;
+}
+
+.icon-menu > div{
+		transform: translateY(10px);
+
+}
+
+.icon-menu >.material-icons{
+	font-size: 40px;
+	text-align: right;
+	transform: translatex(15px);
+}
+
+.logo{
+	visibility: visible;
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	height: 75px;
+	width: 75px;
+	z-index: 4;
+}
+
+
+
+.menu{
+	visibility: hidden;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	background: rgba(0, 0, 0, 0.7);
+	transition: all 0.5s;
+	transform: translatey(-100%);
+	z-index: 3;
+
+}
+.inicio{
+	margin-top: 15%;
+	position: absolute;
+	right: 100px;
+}
+
+.menu a{
+	font-family: Monofonto;	
+	width: 200px;
+	text-align: right;
+	font-size: 40px;
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	padding: 15px;
+}
+
+.menu a:hover{
+	color: #FFA13B;
+	transform: translatex(-20px);
+}
+
+#menu-bar:checked~ .menu{
+	transform: translatey(0%);
+	visibility: visible;
+	position: fixed;
+}
+
+#menu-bar:checked~ label{
+	color: #fff;
+}
+
+
+
+
+
+.container-slider{
+	z-index: 0;
+}
+
