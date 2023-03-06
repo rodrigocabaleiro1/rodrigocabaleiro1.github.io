@@ -15,7 +15,7 @@ label{
 	display: flex;
 	position: fixed;
 	top: 30px;
-	right: 75px;
+	right: 50px;
 	font-size: 20px;
 	font-weight: bold;
 }
@@ -70,15 +70,15 @@ label{
 
 }
 .inicio{
-	margin-top: 15%;
+	margin-top: 150px;
 	position: absolute;
-	right: 100px;
+	right: 75px;
 }
 
 .menu a{	
 	width: 200px;
 	text-align: right;
-	font-size: 40px;
+	font-size: 25px;
 	display: block;
 	color: #fff;
 	text-decoration: none;
@@ -108,3 +108,18 @@ label{
 	z-index: 0;
 }
 
+@media (min-width: 600px){
+	
+	label{
+	right: 75px;
+	}
+
+	.inicio{
+
+	right: 100px;
+	}
+	
+	.menu a{	
+	font-size: 40px;
+	}
+}
