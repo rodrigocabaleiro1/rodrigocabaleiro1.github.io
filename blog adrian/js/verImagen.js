@@ -10,22 +10,18 @@ function openFulImg(reference){
     high=fulImg.height;
     long=fulImg.width;
 
-    if (high>long) {
-        fulImg.style.height = "90vh";
+    if (high>long/1.5) {
+        fulImg.style.height = "90%";
         fulImg.style.width = "auto";
 
     }
      else{
-        if (long/1.5>high) {
-        fulImg.style.width = "160vh";
+        fulImg.style.width = "90%";
         fulImg.style.height = "auto";
-        }
-        else{
-        fulImg.style.width = "100vh";
-        fulImg.style.height = "auto";
-        }
+        
 
     }
+
 
 }
 function closeImg(){
