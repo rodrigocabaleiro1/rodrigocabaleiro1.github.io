@@ -120,6 +120,8 @@ label{
 	}
 	
 	.menu a{	
+		width: 400px;
 	font-size: 40px;
+	white-space: nowrap;
 	}
 }
