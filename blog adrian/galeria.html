@@ -3,8 +3,15 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Galería de Imágenes</title>
+	<title>Galeria de Imagenes</title>
+	
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
 	<link rel="stylesheet" type="text/css" href="css/galeria.css">
+	<script src="js/galeria.js" defer></script>
+
 </head>
 <body>
 	<header>
@@ -13,7 +20,7 @@
 	<input type='checkbox' id="menu-bar">
 		<label class="icon-menu"for="menu-bar">
 			<div class="menu-texto">MENU</div>
-		<span class="material-icons">
+		<span class="material-symbols-outlined">
 			menu
 		</span>
 		</label>
@@ -31,68 +38,67 @@
 	</div>
 	<a href=""><img src="img/Logo3.png" class="logo"></a>
 		</header>
-		<main>
-			<section>
-				<div class="ful-img" id="fulImgBox">
-        <img src="imgs/1.jpg" id="fulImg" alt="">
-        <span onclick="closeImg()">X</span>
-    </div>
-			</section>
-		<section>	
-	<div class="title">
-		GALERIA
-	</div>
-		</section>
-		<section>
-		<div class="row">
-			<div class="column">
-				<img alt="Foto 1" src="img/galeria/imagen01.jpg" onclick="openFulImg(this.src)">
-				<img alt="Foto 2" src="img/galeria/imagen02.jpg" onclick="openFulImg(this.src)">
-				<img alt="Foto 3" src="img/galeria/imagen03.jpg" onclick="openFulImg(this.src)">
-				<img alt="Foto 4" src="img/galeria/fondo01.png" onclick="openFulImg(this.src)">
-				<img alt="Foto 5" src="img/galeria/fondo02.png" onclick="openFulImg(this.src)">
-			</div>
-
-			<div class="column">
-				<img alt="Foto 6" src="img/galeria/imagen04.jpg" onclick="openFulImg(this.src)">
-				<img alt="Foto 7" src="img/galeria/imagen05.jpg" onclick="openFulImg(this.src)">
-				<img alt="Foto 8" src="img/galeria/imagen06.jpg" onclick="openFulImg(this.src)">
-				<img alt="Foto 9" src="img/galeria/fondo03.png" onclick="openFulImg(this.src)">
-				<img alt="Foto 10" src="img/galeria/fondo04.png" onclick="openFulImg(this.src)">
-			</div>
-
-			<div class="column">
-				<img alt="Foto 11" src="img/galeria/imagen07.jpg" onclick="openFulImg(this.src)">
-				<img alt="Foto 12" src="img/galeria/imagen08.jpg" onclick="openFulImg(this.src)">
-				<img alt="Foto 13" src="img/galeria/imagen09.jpg" onclick="openFulImg(this.src)">
-				<img alt="Foto 14" src="img/galeria/fondo05.png" onclick="openFulImg(this.src)">
-				<img alt="Foto 15" src="img/galeria/fondo06.png" onclick="openFulImg(this.src)">
-			</div>
-
-			<div class="column">
-				<img alt="Foto 16" src="img/galeria/imagen10.jpg" onclick="openFulImg(this.src)">
-				<img alt="Foto 17" src="img/galeria/imagen11.jpg" onclick="openFulImg(this.src)">
-				<img alt="Foto 18" src="img/galeria/imagen12.jpg" onclick="openFulImg(this.src)">
-				<img alt="Foto 19" src="img/galeria/imagen13.jpg" onclick="openFulImg(this.src)">
-				<img alt="Foto 20" src="img/galeria/imagen14.jpg" onclick="openFulImg(this.src)">
-			</div>
-
+		
+	<div class="overlay">
+		<div class="slideshow">
+		<span class="btn_cerrar">&times;</span>
+		<div class="botones adelante">
+			<i class="mdi material-symbols-outlined">
+				arrow_forward_ios
+			</i>
 		</div>
-		</section>
+			<div class="botones atras">
+				<i class="mdi material-symbols-outlined">
+					arrow_back_ios
+				</i>
+			</div>
+			<img src="" alt="" id="img_slideshow">
+		</div>
+	</div>
 
-    <script src="js/verImagen.js"></script>
+	<section class="encabezado">
+		<h1>MI PORTAFOLIO</h1>
+	</section>
 
-		</main>
-		<footer>
-            <div class="contenedor">
-                <p class="copy">Copy &copy; 2023</p>
-                <div class="sociales">
-                    <a class="icon-facebook" href="#"></a>
-                    <a class="icon-Twitter" href="#"></a>
-                    <a class="icon-instagram" href="#"></a>
-                    <a class="icon-googleplus" href="#"></a>
-                </div>
-            </div>
-        </footer>
+	<section class="galeria">
+		<div class="columna">
+			<img src="img/galeria/imagen01.jpg" alt="" data-img-mostrar="0">
+			<img src="img/galeria/imagen02.jpg" alt="" data-img-mostrar="1">
+			<img src="img/galeria/imagen03.jpg" alt="" data-img-mostrar="2">
+			<img src="img/galeria/imagen04.jpg" alt="" data-img-mostrar="3">
+			<img src="img/galeria/imagen05.jpg" alt="" data-img-mostrar="4">
+		</div>
+		<div class="columna">
+			<img src="img/galeria/imagen06.jpg" alt="" data-img-mostrar="5">
+			<img src="img/galeria/imagen07.jpg" alt="" data-img-mostrar="6">
+			<img src="img/galeria/imagen08.jpg" alt="" data-img-mostrar="7">
+			<img src="img/galeria/imagen09.jpg" alt="" data-img-mostrar="8">
+			<img src="img/galeria/imagen10.jpg" alt="" data-img-mostrar="9">
+		</div>
+
+		<div class="columna">
+			<img src="img/galeria/imagen11.jpg" alt="" data-img-mostrar="10">
+			<img src="img/galeria/imagen12.jpg" alt="" data-img-mostrar="11">
+			<img src="img/galeria/imagen13.jpg" alt="" data-img-mostrar="12">
+			<img src="img/galeria/imagen14.jpg" alt="" data-img-mostrar="13">
+			<img src="img/galeria/imagen15.jpg" alt="" data-img-mostrar="14">
+		</div>
+
+		<div class="columna">
+			<img src="img/galeria/imagen16.jpg" alt="" data-img-mostrar="15">
+			<img src="img/galeria/imagen17.jpg" alt="" data-img-mostrar="16">
+			<img src="img/galeria/imagen18.jpg" alt="" data-img-mostrar="17">
+			<img src="img/galeria/imagen19.jpg" alt="" data-img-mostrar="18">
+			<img src="img/galeria/imagen20.jpg" alt="" data-img-mostrar="19">
+		</div>
+
+		<div class="columna">
+			<img src="img/galeria/imagen21.jpg" alt="" data-img-mostrar="20">
+			<img src="img/galeria/imagen22.jpg" alt="" data-img-mostrar="21">
+			<img src="img/galeria/imagen23.jpg" alt="" data-img-mostrar="22">
+			<img src="img/galeria/imagen24.jpg" alt="" data-img-mostrar="23">
+			<img src="img/galeria/imagen25.jpg" alt="" data-img-mostrar="24">
+		</div>
+	</section>
 </body>
 </html>

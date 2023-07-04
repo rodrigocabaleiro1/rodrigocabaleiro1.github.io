@@ -20,13 +20,19 @@ label{
 	font-weight: bold;
 }
 
-.menu-boton input[type="checkbox"]: hover {
-	
+
+.material-symbols-outlined{
+	font-size: 40px;
+	transform: translateX(15px);
+	font-weight: 600;
+
+
+
+}
+.menu-texto{
+	font-family: monospace;
 }
 
-.menu-boton{
-	
-}
 
 .icon-menu{
 	z-index: 4;
