@@ -31,6 +31,7 @@ label{
 }
 .menu-texto{
 	font-family: monospace;
+	visibility: hidden;
 }
 
 
@@ -112,6 +113,11 @@ label{
 
 .container-slider{
 	z-index: 0;
+}
+@media (min-width:  450px){
+	.menu-texto{
+	visibility: visible;
+}
 }
 
 @media (min-width: 600px){
